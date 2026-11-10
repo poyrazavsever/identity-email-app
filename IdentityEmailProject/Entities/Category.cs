@@ -7,7 +7,7 @@
 
         public string? CategoryName { get; set; }
 
-        public List<Message> Messages { get; set; }
+        public List<Message> Messages { get; set; } = [];
 
     }
 }
