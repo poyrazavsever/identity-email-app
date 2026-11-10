@@ -1,0 +1,46 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## JetBrains Rider
+.idea/
+*.sln.iml
+
+## Visual Studio Code
+.vscode/
+
+## Local configuration and secrets
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.p12
+*.key
+*.pem
+
+## Databases and generated files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+## Test and coverage output
+[Tt]est[Rr]esult*/
+[Cc]overage*/
+coverage*.json
+coverage*.xml
+
+## Operating system files
+.DS_Store
+Thumbs.db
+
