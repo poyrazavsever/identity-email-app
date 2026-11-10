@@ -9,10 +9,11 @@ The repository currently contains:
 - an ASP.NET Core MVC application targeting .NET 10;
 - ASP.NET Core Identity and Entity Framework Core dependencies;
 - SQL Server provider and EF Core design-time tooling;
-- the initial `Category` and `Message` domain entities;
+- an Identity-aware EF Core context and the initial database migration;
+- the `AppUser`, `Category`, and `Message` domain entities;
 - the default MVC routing and static asset pipeline.
 
-Authentication, persistence, and messaging workflows are planned next and are not wired into the application yet.
+The data model and first migration are in place. Authentication and messaging workflows are not wired into the application pipeline yet.
 
 ## Tech stack
 
@@ -58,9 +59,9 @@ The application prints its local HTTP and HTTPS addresses to the terminal when i
 
 ## Roadmap
 
-- [ ] Configure the EF Core database context and SQL Server connection
+- [x] Configure the EF Core database context and SQL Server connection
 - [ ] Add ASP.NET Core Identity registration, login, and authorization flows
-- [ ] Create and apply the initial database migration
+- [x] Create the initial database migration
 - [ ] Implement inbox, sent, draft, and category views
 - [ ] Add message compose, read-state, and search workflows
 - [ ] Add validation, tests, and CI checks
