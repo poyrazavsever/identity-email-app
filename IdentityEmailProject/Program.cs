@@ -1,7 +1,10 @@
+using IdentityEmailProject.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<EmailContext>();
 
 var app = builder.Build();
 
